@@ -3,6 +3,7 @@
         <tittle>Habitabilidad de un edificio: Personalizacion de preferencias</tittle>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
+        <script defer src="../javaScript/recoleccion-retornoDatos.js"></script>
     </head>
 
     <body>
@@ -11,7 +12,7 @@
                 <form action="" method="post">
                     <p>
                         Apartamento:
-                        <input type="text" id="lugar" class = "campoTexto">
+                        <input type="text" id="lugarIngreso" class = "campoTexto">
                         <br>
                         Cantidad:
                         <input type="text" id="cantidadPersonas" class = "campoTexto">
@@ -29,7 +30,7 @@
                             <br>
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "1">1
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "2">2
-                            <input ype="radio" name="toleranciaRuido" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "3">3
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "4">4
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "5">5
                             <br>
@@ -57,7 +58,7 @@
                             <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "4">4
                             <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "5">5
                         <br>
-                        <button type="submit" class = "boton">Actualizar habitabilidad</button>
+                        <button type="button" class = "boton" onclick="recolectarDatosPersonalizacion()">Actualizar habitabilidad</button>
                     </p>
                 </form>
         </div>

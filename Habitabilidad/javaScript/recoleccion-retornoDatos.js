@@ -38,3 +38,52 @@ function recolectar_mudarHabitantes(){
   var lugarDestino = document.getElementById("lugarDestino").value;
   document.getElementById("lugarDestino").innerHTML = lugarDestino;
 }
+
+/*Para formularioPersonalizacion.html */
+function recolectarDatosPersonalizacion(){
+  var lugarIngreso = document.getElementById("lugarIngreso").value;
+  document.getElementById("lugarIngreso").innerHTML = lugarIngreso;
+
+  var cantidadPersonas = document.getElementById("cantidadPersonas").value;
+  document.getElementById("cantidadPersonas").innerHTML = cantidadPersonas;
+  /* recoger elementos de radioButtons*/
+  var seleccionMascotas = document.getElementsByName('toleranciaMascotas');
+  seleccionMascotas = recogerRadioButton(seleccionMascotas);
+
+  var seleccionRuido = document.getElementsByName('toleranciaRuido');
+  seleccionRuido = recogerRadioButton(seleccionRuido);
+
+  var seleccionVecinos = document.getElementsByName('toleranciaVecinos');
+  seleccionVecinos = recogerRadioButton(seleccionVecinos);
+
+  var seleccionConvivencia = document.getElementsByName('toleranciaConvivencia');
+  seleccionConvivencia = recogerRadioButton(seleccionConvivencia);
+  
+}
+
+/* para gestionEdificio.html */
+function recolectarDatosEdificio(){
+  var toleranciaMascotas = document.getElementsByName('toleranciaMascotas');
+  toleranciaMascotas = recogerRadioButton(toleranciaMascotas);
+
+  var toleranciaRuido = document.getElementsByName('toleranciaRuido');
+  toleranciaRuido = recogerRadioButton(toleranciaRuido);
+
+  var toleranciaVecinos = document.getElementsByName('toleranciaVecinos');
+  toleranciaVecinos = recogerRadioButton(toleranciaVecinos);
+
+  var toleranciaNiños = document.getElementsByName('toleranciaNiños');
+  toleranciaNiños = recogerRadioButton(toleranciaNiños);
+
+  var toleranciaConvivencia = document.getElementsByName('toleranciaConvivencia');
+  toleranciaConvivencia = recogerRadioButton(toleranciaConvivencia);
+}
+/* funcion adicional, para saber cual es la seleccion de los radioButton */
+function recogerRadioButton(nombreSeleccion){
+  for (var i = 0, length = nombreSeleccion.length; i < length; i++) {
+    if (nombreSeleccion[i].checked) {
+        return nombreSeleccion[i].value;
+        break;
+    }
+  }
+}
