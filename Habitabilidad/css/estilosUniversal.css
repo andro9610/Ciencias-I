@@ -1,0 +1,86 @@
+body{
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+}
+
+tittle{
+    visibility: hidden;
+    margin-top: 0;
+    font-size: 1;
+}
+
+#titulo{
+    font-size: 210%;
+    position: relative;
+}
+div{
+    text-align: center;
+    margin-top: 1%;
+    border-style: solid;
+    border-color: darkgray;
+    border-radius: 15px;
+    width: 50%;
+    float: left;
+}
+
+.boton{
+    margin-top:2%;
+    margin-right:1%;
+    margin-left: 1%;
+
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: hidden;
+}
+
+.boton:hover{
+    background-color: lightgreen;
+    color: gray;
+}
+
+.campoTexto{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 100%;
+    margin-bottom: 8px;
+    width: 30%;
+}
+
+p{
+    font-size: 125%;
+}
+
+.menuSeleccion{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 100%;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+#botonGestionHabitantes{
+    margin-left: 12%;
+}
+
+.seleccionRadio{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#grafo{
+    margin: 0;
+    background-color: black;
+    position: fixed;
+    float:right;
+    margin-left: 51%;
+    margin-top: 5%;
+    width: 48%;
+}
+
+canvas{
+    align-content: left;
+}

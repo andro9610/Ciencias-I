@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <tittle>Habitabilidad de un edificio: Gestion de Habitantes</tittle>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
+    </head>
+ 
+    <body>
+        <h1>Habitabilidad de un edificio: Gestion de Habitantes</h1>
+        <div id="añadirHabitantes" class = "contenedor">
+                <h2>Añadir habitantes</h2>
+                <form action="" method="post">
+                    <p>
+                        Cantidad:
+                        <input type="text" id="habitantesAñadidos" class = "campoTexto">
+                        Lugar:
+                        <input type="text" id="lugarHabitantesAñadidos" class = "campoTexto">
+                        <br>
+                        <button type="submit" class = "boton">Actualizar habitabilidad</button>
+                        <button type="button" onclick="location='formularioPersonalizacion.html'" class = "boton">Personalizar Preferencias</button>
+    
+                    </p>
+                </form>
+            </div>
+    
+            <div id="eliminarHabitantes" class = "contenedor">
+                    <h2>Eliminar Habitantes</h2>
+                    <form action="" method="post">
+                        <p>
+                            Cantidad:
+                            <input type="text" id="habitantesEliminados" class = "campoTexto">
+                            Lugar:
+                            <input type="text" id="lugarHabitantesEliminados" class = "campoTexto">
+                            <br>
+                            <button type="submit" class = "boton">Actualizar habitabilidad</button>
+                        </p>
+                    </form>
+            </div>
+    
+    
+            <div id="mudarHabitantes" class = "contenedor">
+                    <h2>Mudar Habitantes</h2>
+                    <form action="" method="post">
+                        <p>
+                            Origen:
+                            <input type="text" id="lugarOrigen" class = "campoTexto">
+                            Destino:
+                            <input type="text" id="lugarDestino" class = "campoTexto">
+                            <br>
+                            <button type="submit" class = "boton">Actualizar habitabilidad</button>
+                        </p>
+                    </form>
+            </div>
+    
+            <button type="button" onclick="location='../index.html'" class = "boton">Volver al inicio</button>
+    </body>
+</html>

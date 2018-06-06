@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <tittle>Habitabilidad de un edificio: Gestion del edificio</tittle>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
+        <script defer src="../javaScript/calculosEdificio.js"></script>
+    </head>
+        <div id="datosHabitantes" class = "contenedor">
+            <h2>Datos basicos acerca del entorno del edificio</h2>
+                <p>
+                    <h3>En una escala del 1 al 5 que cantidad hay de:</h3>
+                    Trafico:
+                        <br>                     
+                        <input type="radio" name="toleranciaMascotas" value = "-2">1
+                        <input type="radio" name="toleranciaMascotas" value = "-1">2
+                        <input type="radio" name="toleranciaMascotas" value = "0">3
+                        <input type="radio" name="toleranciaMascotas" value = "1">4
+                        <input type="radio" name="toleranciaMascotas" value = "2">5
+                        <br>
+                    Parques:
+                        <br>
+                        <input type="radio" name="toleranciaRuido" value = "-2">1
+                        <input type="radio" name="toleranciaRuido" value = "-1">2
+                        <input type="radio" name="toleranciaRuido" value = "0">3
+                        <input type="radio" name="toleranciaRuido" value = "1">4
+                        <input type="radio" name="toleranciaRuido" value = "2">5
+                        <br>
+                    Poblacion:
+                        <br>
+                        <input type="radio" name="toleranciaVecinos" value = "-2">1
+                        <input type="radio" name="toleranciaVecinos" value = "-1">2
+                        <input type="radio" name="toleranciaVecinos" value = "0">3
+                        <input type="radio" name="toleranciaVecinos" value = "1">4
+                        <input type="radio" name="toleranciaVecinos" value = "2">5
+                        <br>
+                    Lugares sociales (Como bares, restaurantes, centros comerciales, etc):
+                        <br>
+                        <input type="radio" name="toleranciaNiños" value = "-2">1
+                        <input type="radio" name="toleranciaNiños" value = "-1">2
+                        <input type="radio" name="toleranciaNiños" value = "0">3
+                        <input type="radio" name="toleranciaNiños" value = "1">4
+                        <input type="radio" name="toleranciaNiños" value = "2">5
+                        <br>
+                    Construcciones especializadas (Como hospitales, estaciones de policia, etc):
+                        <br>
+                        <input type="radio" name="toleranciaConvivencia" value = "-2">1
+                        <input type="radio" name="toleranciaConvivencia" value = "-1">2
+                        <input type="radio" name="toleranciaConvivencia" value = "0">3
+                        <input type="radio" name="toleranciaConvivencia" value = "1">4
+                        <input type="radio" name="toleranciaConvivencia" value = "2">5
+                    <br>
+                    <button type="button" class="boton" onclick="recolectarDatos()">Terminar Gestion</button>
+                </p>
+            </div>
+        <button type="button" onclick="location='../index.html'" class="boton">Ir a inicio</button>
+    <body>
+
+    </body>
+</html>

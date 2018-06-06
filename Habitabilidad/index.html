@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <tittle>Habitabilidad de un edificio: Inicio</tittle>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel=StyleSheet HREF="css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
+        <script defer src="javaScript/recoleccion-retornoDatos.js"></script>
+    </head>
+
+    <body>
+        <h1 id ="titulo">Habitabilidad de un Edificio: Inicio</h1>
+        <!--Miniformulario para añadir fenomenos-->
+        <div class = "contenedor" id="fenomenos">
+            <h2>Fenomenos</h2>
+            <p>
+                Añadir
+                <select id = "fenomenoAgregado" name = "fenomenoAgregado" class="menuSeleccion">
+                    <optgroup label="Fenomenos asociados a personas">
+                        <option value = "1"> Vecino molesto </option>
+                        <option value = "2">Vecino irritable</option>
+                    </optgroup>
+                    <optgroup label = "Fenomenos de agregacion">
+                        <option value = "3">Niños pequeños</option>
+                        <option value = "4">Mascota(s)</option>
+                    </optgroup>
+                    <optgroup label="Fenomenos de entorno">
+                        <option value = "5">Ruido</option>
+                        <option value = "6">Enfermedad contagiosa</option>
+                    </optgroup>
+                    <optgroup label = "Fenomenos de Convivencia">
+                        <option value = "7">Algun Chisme</option>
+                        <option value = "8">Vecino No confort</option>
+                    </optgroup>
+                </select>
+                <br>
+                Quitar
+                <select id = "fenomenoQuitado" name = "fenomenoAgregado" class="menuSeleccion">
+                    <optgroup label="Fenomenos asociados a personas">
+                        <option value = "1"> Vecino molesto </option>
+                        <option value = "2">Vecino irritable</option>
+                    </optgroup>
+                    <optgroup label = "Fenomenos de agregacion">
+                        <option value = "3">Niños pequeños</option>
+                        <option value = "4">Mascota(s)</option>
+                    </optgroup>
+                </select>
+                <br>
+                <button type="button" class="boton" onclick = "recolectarFenomenos()">Actualizar habitabilidad</button>
+            </p>
+        </div>
+        <!--Miniformulario de control para habitaciones en mantenimiento-->
+        <div id="mantenimiento" class = "contenedor">
+            <h2>Mantenimiento del edificio</h2>
+                <p>
+                    Habitacion
+                    <input type="text" name="habitacionSeleccionada" id="habitacionSeleccionada" class="campoTexto">
+                    <br>
+                    Estado de mantenimiento
+                    <select name = "estadoHabitacion" id="estadoHabitacion" class="menuSeleccion">
+                        <option value = "0">Mantenimiento</option>
+                        <option value = "1">Disponible</option>
+                    </select>
+                    <br>                     
+                    <button type="button" class = "boton" onclick="recolectarDatosMantenimiento()">Actualizar edificio</button>
+                </p>
+        </div>
+        <!--MiniCanvas con el grafo-->
+        <div id="grafo">
+            <canvas id="c" width="500px" height="475px"></canvas>
+            <script src="javascript/estructuras.js" type="text/javascript"></script>
+            <script src="javascript/edificio.js" type="text/javascript"></script>
+        </div>
+
+        <button type="button" onclick="location='paginas/gestionHabitantes.html'" class = "boton" id="botonGestionHabitantes">Gestionar Habitantes</button>
+        <button type="button" onclick="location='paginas/gestionEdificio.html'" class = "boton">Gestionar Edificio</button>
+    </body>
+</html>

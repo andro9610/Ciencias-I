@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <tittle>Habitabilidad de un edificio: Personalizacion de preferencias</tittle>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
+    </head>
+
+    <body>
+        <div id="datosHabitantes" class = "contenedor">
+                <h2>Ingreso de Datos(Por familia)</h2>
+                <form action="" method="post">
+                    <p>
+                        ID:
+                        <input type="text" id="Identificacion" class = "campoTexto">
+                        <br>
+                        Cantidad:
+                        <input type="text" id="cantidadPersonas" class = "campoTexto">
+                        <br>
+                        <h3>En una escala del 1 al 5 cuanto soporta:</h3>
+                        Mascotas:
+                            <br>                     
+                            <input type="radio" name="toleranciaMascotas" class = "seleccionRadio" value = "1">1
+                            <input type="radio" name="toleranciaMascotas" class = "seleccionRadio" value = "2">2
+                            <input type="radio" name="toleranciaMascotas" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaMascotas" class = "seleccionRadio" value = "4">4
+                            <input type="radio" name="toleranciaMascotas" class = "seleccionRadio" value = "5">5
+                            <br>
+                        Ruido
+                            <br>
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "1">1
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "2">2
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "4">4
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "5">5
+                            <br>
+                        Vecinos molestos
+                            <br>
+                            <input type="radio" name="toleranciaVecinos" class = "seleccionRadio" value = "1">1
+                            <input type="radio" name="toleranciaVecinos" class = "seleccionRadio" value = "2">2
+                            <input type="radio" name="toleranciaVecinos" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaVecinos" class = "seleccionRadio" value = "4">4
+                            <input type="radio" name="toleranciaVecinos" class = "seleccionRadio" value = "5">5
+                            <br>
+                        Niños Pequeños
+                            <br>
+                            <input type="radio" name="toleranciaNiños" class = "seleccionRadio" value = "1">1
+                            <input type="radio" name="toleranciaNiños" class = "seleccionRadio" value = "2">2
+                            <input type="radio" name="toleranciaNiños" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaNiños" class = "seleccionRadio" value = "4">4
+                            <input type="radio" name="toleranciaNiños" class = "seleccionRadio" value = "5">5
+                            <br>
+                        Problemas de convivencia entre Vecinos
+                            <br>
+                            <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "1">1
+                            <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "2">2
+                            <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "4">4
+                            <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "5">5
+                        <br>
+                        <button type="submit" class = "boton">Actualizar habitabilidad</button>
+                    </p>
+                </form>
+        </div>
+        <button type="button" onclick="location='gestionHabitantes.html'" class = "boton">Regresar</button>
+        <button type="button" onclick="location='../index.html'" class ="boton">Ir a inicio</button>
+    </body>
+</html>
