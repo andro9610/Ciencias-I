@@ -77,6 +77,7 @@ function recolectarDatosEdificio(){
 
   var toleranciaConvivencia = document.getElementsByName('toleranciaConvivencia');
   toleranciaConvivencia = recogerRadioButton(toleranciaConvivencia);
+  alert(toleranciaConvivencia);
 }
 /* funcion adicional, para saber cual es la seleccion de los radioButton */
 function recogerRadioButton(nombreSeleccion){
