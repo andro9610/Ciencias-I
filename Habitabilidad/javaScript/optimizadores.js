@@ -1,4 +1,4 @@
-matriz[][];
+var matriz=new Array();
 for(var i = 0; i < 5; i++){
 	for(var j = 0; j < 4; j++){
 		matriz[i][j] = new Habitacion();
@@ -219,7 +219,7 @@ function juegoVida(){
             y: parseInt(arrPos[1])
         };
     }
-}();
+};
 
 function Backtrack(){
     var solucionActual=[], resultadoActual=0;
