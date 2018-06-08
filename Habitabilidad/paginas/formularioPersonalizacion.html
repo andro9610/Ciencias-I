@@ -3,10 +3,11 @@
         <tittle>Habitabilidad de un edificio: Personalizacion de preferencias</tittle>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
-        <script defer src="../javaScript/recoleccion-retornoDatos.js"></script>
+        <script defer src="../javaScript/calculos.js"></script>
     </head>
 
     <body>
+        <h1 id="tittle">Habitabilidad de un Edificio: Formulario de Personalizacion de preferencias</h1>
         <div id="datosHabitantes" class = "contenedor">
                 <h2>Ingreso de Datos(Por familia)</h2>
                 <form action="" method="post">
@@ -58,7 +59,7 @@
                             <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "4">4
                             <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "5">5
                         <br>
-                        <button type="button" class = "boton" onclick="recolectarDatosPersonalizacion()">Actualizar habitabilidad</button>
+                        <button type="button" class = "boton" onclick="actualizarHabitabilidad()">Actualizar habitabilidad</button>
                     </p>
                 </form>
         </div>

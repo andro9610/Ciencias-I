@@ -3,8 +3,9 @@
         <tittle>Habitabilidad de un edificio: Gestion del edificio</tittle>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
-        <script defer src="../javaScript/recoleccion-retornoDatos.js"></script>
+        <script defer src="../javaScript/calculos.js"></script>
     </head>
+        <h1 id="tittle">Habitabilidad de un Edificio: gestion del edificio</h1>
         <div id="datosHabitantes" class = "contenedor">
             <h2>Datos basicos acerca del entorno del edificio</h2>
                 <p>
@@ -49,7 +50,7 @@
                         <input type="radio" name="toleranciaConvivencia" value = "1">4
                         <input type="radio" name="toleranciaConvivencia" value = "2">5
                     <br>
-                    <button type="button" class="boton" onclick="recolectarDatosEdificio()">Terminar Gestion</button>
+                    <button type="button" class="boton" onclick="actualizarHabitabilidad()">Terminar Gestion</button>
                 </p>
             </div>
         <button type="button" onclick="location='../index.html'" class="boton">Ir a inicio</button>
