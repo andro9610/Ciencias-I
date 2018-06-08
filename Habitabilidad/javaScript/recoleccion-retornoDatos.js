@@ -38,6 +38,7 @@ function recolectar_mudarHabitantes(){
   var lugarDestino = document.getElementById("lugarDestino").value;
   document.getElementById("lugarDestino").innerHTML = lugarDestino;
 }
+<<<<<<< HEAD
 
 /*Para formularioPersonalizacion.html */
 function recolectarDatosPersonalizacion(){
@@ -88,3 +89,5 @@ function recogerRadioButton(nombreSeleccion){
     }
   }
 }
+=======
+>>>>>>> parent of f51333b... recoleccion de datos finalizada
