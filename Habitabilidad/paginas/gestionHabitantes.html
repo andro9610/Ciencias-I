@@ -3,11 +3,11 @@
         <tittle>Habitabilidad de un edificio: Gestion de Habitantes</tittle>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
-        <script defer src="../javaScript/recoleccion-retornoDatos.js"></script>
+        <script defer src="../javaScript/calculos.js"></script>
     </head>
  
     <body>
-        <h1>Habitabilidad de un edificio: Gestion de Habitantes</h1>
+        <h1 id="titulo">Habitabilidad de un edificio: Gestion de Habitantes</h1>
         <div id="añadirHabitantes" class = "contenedor">
                 <h2>Añadir habitantes</h2>
                     <p>
@@ -16,7 +16,6 @@
                         Lugar:
                         <input type="text" id="lugarHabitantesAñadidos" class = "campoTexto">
                         <br>
-                        <button type="button" class = "boton" onclick="recolectar_añadirHabitantes()">Actualizar habitabilidad</button>
                         <button type="button" onclick="location='formularioPersonalizacion.html'" class = "boton">Personalizar Preferencias</button>
                     </p>
             </div>
@@ -29,7 +28,6 @@
                         Lugar:
                         <input type="text" id="lugarHabitantesEliminados" class = "campoTexto">
                         <br>
-                        <button type="submit" class = "boton" onclick="recolectar_eliminarHabitantes()">Actualizar habitabilidad</button>
                     </p>
             </div>
     
@@ -42,10 +40,12 @@
                         Destino:
                         <input type="text" id="lugarDestino" class = "campoTexto">
                         <br>
-                        <button type="button" class = "boton" onclick="recolectar_mudarHabitantes()">Actualizar habitabilidad</button>
                     </p>
             </div>
-    
-            <button type="button" onclick="location='../index.html'" class = "boton">Volver al inicio</button>
+            <div id="botonesNavegacion">
+                <button type="button" class = "boton" onclick="actualizarHabitabilidad()">Actualizar habitabilidad</button>
+                <button type="button" onclick="location='../index.html'" class = "boton">Volver al inicio</button>                
+            </div>
+
     </body>
 </html>

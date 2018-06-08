@@ -3,9 +3,11 @@
         <tittle>Habitabilidad de un edificio: Personalizacion de preferencias</tittle>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel=StyleSheet HREF="../css/estilosUniversal.css" TYPE="text/css" MEDIA=screen>
+        <script defer src="../javaScript/calculos.js"></script>
     </head>
 
     <body>
+        <h1 id="titulo">Habitabilidad de un edificio: Personalizacion de preferencias</h1>
         <div id="datosHabitantes" class = "contenedor">
                 <h2>Ingreso de Datos(Por familia)</h2>
                 <form action="" method="post">
@@ -29,7 +31,7 @@
                             <br>
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "1">1
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "2">2
-                            <input ype="radio" name="toleranciaRuido" class = "seleccionRadio" value = "3">3
+                            <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "3">3
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "4">4
                             <input type="radio" name="toleranciaRuido" class = "seleccionRadio" value = "5">5
                             <br>
@@ -57,11 +59,14 @@
                             <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "4">4
                             <input type="radio" name="toleranciaConvivencia" class = "seleccionRadio" value = "5">5
                         <br>
-                        <button type="submit" class = "boton">Actualizar habitabilidad</button>
+                        <button type="button" class = "boton" onclick="actualizarHabitabilidad()">Actualizar habitabilidad</button>
                     </p>
                 </form>
         </div>
-        <button type="button" onclick="location='gestionHabitantes.html'" class = "boton">Regresar</button>
-        <button type="button" onclick="location='../index.html'" class ="boton">Ir a inicio</button>
+        <div id="botonesNavegacion">
+            <button type="button" onclick="location='gestionHabitantes.html'" class = "boton">Regresar</button>
+            <button type="button" onclick="location='../index.html'" class ="boton">Ir a inicio</button>
+        </div>
+
     </body>
 </html>

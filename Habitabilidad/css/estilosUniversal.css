@@ -1,7 +1,7 @@
 body{
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0;
+    margin-top:0;
 }
 
 tittle{
@@ -13,6 +13,7 @@ tittle{
 #titulo{
     font-size: 210%;
     position: relative;
+    margin-top:0;
 }
 div{
     text-align: center;
@@ -62,10 +63,6 @@ p{
     margin-bottom: 8px;
 }
 
-#botonGestionHabitantes{
-    margin-left: 12%;
-}
-
 .seleccionRadio{
     margin-top: 12px;
     margin-bottom: 12px;
@@ -77,10 +74,15 @@ p{
     position: fixed;
     float:right;
     margin-left: 51%;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 48%;
 }
 
 canvas{
     align-content: left;
+}
+
+#botonesNavegacion{
+    position: relative;
+    border-color: whitesmoke;
 }

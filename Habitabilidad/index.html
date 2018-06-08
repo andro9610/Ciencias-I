@@ -6,7 +6,7 @@
         <script defer src="javaScript/calculos.js"></script>
     </head>
 
-    <body>
+    <body onload="dibujarEdificio()">
         <h1 id ="titulo">Habitabilidad de un Edificio: Inicio</h1>
         <!--Miniformulario para añadir fenomenos-->
         <div class = "contenedor" id="fenomenos">
@@ -65,12 +65,11 @@
         </div>
         <!--MiniCanvas con el grafo-->
         <div id="grafo">
-            <canvas id="c" width="500px" height="475px"></canvas>
-            <script src="javascript/estructuras.js" type="text/javascript"></script>
-            <script src="javascript/edificio.js" type="text/javascript"></script>
+            <canvas id="c" width="700px" height="500px"></canvas>
         </div>
-
-        <button type="button" onclick="location='paginas/gestionHabitantes.html'" class = "boton" id="botonGestionHabitantes">Gestionar Habitantes</button>
-        <button type="button" onclick="location='paginas/gestionEdificio.html'" class = "boton">Gestionar Edificio</button>
+        <div id="botonesNavegacion">
+            <button type="button" onclick="location='paginas/gestionHabitantes.html'" class = "boton" id="botonGestionHabitantes">Gestionar Habitantes</button>
+            <button type="button" onclick="location='paginas/gestionEdificio.html'" class = "boton">Gestionar Edificio</button>
+        </div>
     </body>
 </html>
