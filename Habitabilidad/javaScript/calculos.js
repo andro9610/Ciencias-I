@@ -39,6 +39,8 @@ function recolectarFenomenos(){
 
 function recolectarDatosMantenimiento(){
     habitacionSeleccionada = document.getElementById("habitacionSeleccionada").value;
+    piso = parseInt(habitacionSeleccionada/100);
+    apartamento = habitacionSeleccionada - (piso*100);
     estadoHabitacion = document.getElementById("estadoHabitacion").value;
 }
 
@@ -127,12 +129,10 @@ function crearEdificio(){
     }
 }
 
-var edificio;
-var dibujar;
+var edificio = document.getElementById("c");;
+var dibujar = edificio.getContext("2d");
 
 function dibujarEdificio(){
-    edificio = document.getElementById("c");
-    dibujar = edificio.getContext("2d");
     for(var j=0;j<5;j++){
         for(var i=0;i<4;i++){
             dibujar.beginPath();
@@ -161,12 +161,28 @@ function selColorTolerancia(toleranciaActual){
     }
 }
 
-function selColorDisponible(disponibilidad){
-    if(disponibilidad == true){
+function selColorDisponible(estadoHabitacion){
+    if(estadoHabitacion == 1){
         colorDisponible = '#FFFFFF';
     }else{
         colorDisponible = '#FF00B6';
     }
+}
+
+function actualizarMantenimiento(){
+    recolectarDatosMantenimiento();
+
+    edificio = document.getElementById("c");;
+    dibujar = edificio.getContext("2d");
+
+    dibujar.beginPath();
+    dibujar.arc(80+(180*apartamento),450-(100*piso),20,0,Math.PI*2,false);
+    dibujar.fillStyle = colorTolerancia;
+    dibujar.strokeStyle = selColorDisponible(estadoHabitacion);
+    dibujar.lineWidth = 5;
+    dibujar.fill();
+    dibujar.stroke();
+    dibujar.closePath();
 }
 /**Funcion Principal del proyecto, permite modificar la habitabilidad de el edificio */
 function actualizarHabitabilidad(){
